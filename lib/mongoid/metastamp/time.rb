@@ -4,7 +4,7 @@ module Mongoid #:nodoc:
   module Metastamp
     class Time
       include Mongoid::Fields::Serializable
-      include Mongoid::Fields::Internal::Timekeeping
+      #include Mongoid::Fields::Internal::Timekeeping
 
       def deserialize(object)
         return nil if object.blank?
