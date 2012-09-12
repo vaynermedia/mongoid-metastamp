@@ -3,7 +3,7 @@
 module Mongoid #:nodoc:
   module Metastamp
     class Time
-      include Mongoid::Fields::Serializable
+      #include Mongoid::Fields::Serializable
       #include Mongoid::Fields::Internal::Timekeeping
 
       def deserialize(object)
